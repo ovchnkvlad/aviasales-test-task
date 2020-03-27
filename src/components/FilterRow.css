@@ -1,0 +1,70 @@
+.radio__btn input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.radio__btn .radio__btn--title {
+  position: relative;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 1;
+  color: #2196f3;
+}
+
+.radio__btn {
+  display: block;
+  position: relative;
+  padding: 13px 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+  text-align: center;
+  background: ##f2fcff;
+  box-sizing: border-box;
+}
+.radio__btn .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  z-index: 0;
+  border: none;
+  border: 1px solid #dfe5ec;
+}
+.radio__btn:first-child {
+  border-radius: 5px 0 0 5px;
+}
+.radio__btn:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.radio__btn:first-child > .checkmark {
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+}
+.radio__btn:last-child > .checkmark {
+  border-radius: 0 5px 5px 0;
+  border-left: none;
+}
+.radio__btn:hover {
+  background-color: #2196f3;
+  color: #fff;
+}
+.radio__btn input:checked ~ .checkmark {
+  background-color: #2196f3;
+  border-color: #2196f3;
+}
+.radio__btn input:checked ~ .checkmark:hover {
+  background-color: #2196f3;
+  color: #fff;
+}
+.radio__btn input:checked ~ .radio__btn--title {
+  color: white;
+}
+
+.radio__btn input:checked ~ .radio__btn:hover {
+  background-color: #2196f3;
+}

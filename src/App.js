@@ -1,24 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
+import Logo from './components/Logo';
+import Filter from './components/Filter';
+import FilterRow from './components/FilterRow';
+import Ticket from './components/Ticket';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="row logo_wrapper">
+        <Logo />
+      </div>
+      <div className="row">
+        <div className="col-md-3 offset-md-1">
+          <Filter />
+        </div>
+        <div className="col-md-7">
+          <FilterRow />
+          <Ticket />
+          <Ticket />
+          <Ticket />
+        </div>
+      </div>
     </div>
   );
 }
