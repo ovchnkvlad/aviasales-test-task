@@ -9,27 +9,27 @@ const Filter = () => {
         <label className="checkbox">
           Все
           <input type="checkbox" />
-          <span class="checkmark"></span>
+          <span className="checkmark"></span>
         </label>
         <label className="checkbox">
           Без пересадок
           <input type="checkbox" />
-          <span class="checkmark"></span>
+          <span className="checkmark"></span>
         </label>
         <label className="checkbox">
           1 пересадка
           <input type="checkbox" />
-          <span class="checkmark"></span>
+          <span className="checkmark"></span>
         </label>
         <label className="checkbox">
           2 пересадки
           <input type="checkbox" />
-          <span class="checkmark"></span>
+          <span className="checkmark"></span>
         </label>
         <label className="checkbox">
           3 пересадки
           <input type="checkbox" />
-          <span class="checkmark"></span>
+          <span className="checkmark"></span>
         </label>
       </form>
     </div>
